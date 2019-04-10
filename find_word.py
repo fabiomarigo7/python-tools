@@ -1,22 +1,16 @@
 import os
-
-s = ''
-
 print('=== find word ===\n\n')
-
+s = ''
 while (True):
     n = 0
     list = os.listdir()
-    
     print('-------------------------------------')
     print("@ Write the string you are looking for")
     print("@ Or write Q to quit\n")
     s = input().lower()
     print('')
-    
     if (s == 'q' or s=='Q'):
         break;
-    
     elif (s.strip() == ''): 
         print('@ Please write a valid string!\n')
         pass
@@ -28,4 +22,3 @@ while (True):
                     n += 1
         print('\n@ The operation has been done successfully!')
         print('@ '+str(n)+' files contain the string.\n')
-        
