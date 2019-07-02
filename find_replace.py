@@ -7,14 +7,14 @@ def findReplace():
         list = os.listdir()
         print('-------------------------------------')
         print("@ Write the string you want to replace\n")
-        s1 = input().lower()
+        s1 = input()
 
         if (s1.strip() == ''): 
             print('@ Please choose valid string!\n')
             pass
         else:
             print("\n@ Write the new string you want to put\n")
-            s2 = input().lower()
+            s2 = input()
             for el in list:
                 if (el != "find_replace.py"):
                     full_text = open(el).read()
